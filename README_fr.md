@@ -2,7 +2,7 @@
 
 # OhMyTermux 🧊
 
-### **De la sélection d'un shell à l'application d'un pack de curseurs afin de cliquer avec style dans les menus d'un environnement de développement Debian complet tenant dans votre poche : des dizaines de paramètres sont disponibles dans [OhMyTermux](https://github.com/OhMyAppx/OhMyTermux).**
+### **De la sélection d'un shell à l'application d'un pack de curseurs afin de cliquer avec style dans les menus d'un environnement de développement Debian complet tenant dans votre poche : des dizaines de paramètres sont disponibles dans [OhMyTermux](https://github.com/GiGiDKR/OhMyTermux).**
 
 ## Installation
 
@@ -10,7 +10,7 @@
 
 2. Installez **OhMyTermux** avec **[Gum](https://github.com/charmbracelet/gum)** 🔥 :
 ```bash
-curl -sL https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/main/install_fr.sh -o install_fr.sh && chmod +x install_fr.sh && ./install_fr.sh --gum
+curl -sL https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/install_fr.sh -o install_fr.sh && chmod +x install_fr.sh && ./install_fr.sh --gum
 ```
 
 >[!IMPORTANT]
@@ -18,7 +18,7 @@ curl -sL https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/main/install_fr.s
 
 2. [ALT] Installer OhMyTermux sans Gum 🧊 :
 ```bash
-curl -sL https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/main/install_fr.sh -o install_fr.sh && chmod +x install_fr.sh && ./install_fr.sh
+curl -sL https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/install_fr.sh -o install_fr.sh && chmod +x install_fr.sh && ./install_fr.sh
 ```
 
 >[!NOTE]
@@ -262,6 +262,11 @@ WhiteSur-Wallpapers      # https://github.com/vinceliuice/WhiteSur-wallpapers
 - ```cp2menu``` L'exécution de ceci fera apparaître une fenêtre vous permettant de copier les fichiers .desktop depuis debian proot dans le menu « démarrer » de termux xfce afin que vous n'ayez pas besoin de les lancer depuis le terminal. Un lanceur est disponible dans la section du menu Système.
 
 </details>
+
+## Screenshots
+
+![Termux List](assets/termux_ls.png)
+![Debian PRoot](assets/debian_proot.png)
 
 &nbsp;
 
