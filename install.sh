@@ -634,7 +634,7 @@ install_shell() {
                     fi
                 fi
 
-                execute_command "curl -fLo \"$ZSHRC\" https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/src/zshrc" "Default configuration" || error_msg "Default configuration impossible"
+                execute_command "curl -fLo \"$ZSHRC\" https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/1.0.0/src/zshrc" "Default configuration" || error_msg "Default configuration impossible"
 
                 if $USE_GUM; then
                     if gum_confirm "Install PowerLevel10k ?"; then
@@ -642,7 +642,7 @@ install_shell() {
                         sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k\/powerlevel10k"/' "$ZSHRC"
 
                         if gum_confirm "Install custom prompt ?"; then
-                            execute_command "curl -fLo \"$HOME/.p10k.zsh\" https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/src/p10k.zsh" "Custom prompt installation" || error_msg "Custom prompt installation impossible"
+                            execute_command "curl -fLo \"$HOME/.p10k.zsh\" https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/1.0.0/src/p10k.zsh" "Custom prompt installation" || error_msg "Custom prompt installation impossible"
                             echo -e "\n# For customizing the prompt, run \`p10k configure\` or edit ~/.p10k.zsh." >> "$ZSHRC"
                             echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >> "$ZSHRC"
                         else
@@ -663,7 +663,7 @@ install_shell() {
                         tput cuu1
                         tput el
                         if [[ "$CHOICE" =~ ^[yY]$ ]]; then
-                            execute_command "curl -fLo \"$HOME/.p10k.zsh\" https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/src/p10k.zsh" "OhMyTermux prompt installation" || error_msg "OhMyTermux prompt installation impossible"
+                            execute_command "curl -fLo \"$HOME/.p10k.zsh\" https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/1.0.0/src/p10k.zsh" "OhMyTermux prompt installation" || error_msg "OhMyTermux prompt installation impossible"
                             echo -e "\n# For customizing the prompt, run \`p10k configure\` or edit ~/.p10k.zsh." >> "$ZSHRC"
                             echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >> "$ZSHRC"
                         else
@@ -672,9 +672,9 @@ install_shell() {
                     fi
                 fi
 
-                execute_command "(curl -fLo \"$HOME/.oh-my-zsh/custom/aliases.zsh\" https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/src/aliases.zsh && \
+                execute_command "(curl -fLo \"$HOME/.oh-my-zsh/custom/aliases.zsh\" https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/1.0.0/src/aliases.zsh && \
                                 mkdir -p $HOME/.config/OhMyTermux && \
-                                curl -fLo \"$HOME/.config/OhMyTermux/help.md\" https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/src/help.md)" "Default configuration" || error_msg "Default configuration impossible"
+                                curl -fLo \"$HOME/.config/OhMyTermux/help.md\" https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/1.0.0/src/help.md)" "Default configuration" || error_msg "Default configuration impossible"
 
                 if command -v zsh &> /dev/null; then
                     install_zsh_plugins
@@ -1168,7 +1168,7 @@ install_xfce() {
             execute_command "pkg install -y $PACKAGE" "Installation of $PACKAGE"
         done
         
-        execute_command "curl -O https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/xfce.sh" "Downloading XFCE script" || error_msg "Impossible to download XFCE script"
+        execute_command "curl -O https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/1.0.0/xfce.sh" "Downloading XFCE script" || error_msg "Impossible to download XFCE script"
         execute_command "chmod +x xfce.sh" "Execution of XFCE script"
         
         if $USE_GUM; then
@@ -1282,7 +1282,7 @@ install_proot() {
         if $USE_GUM; then
             if gum confirm --affirmative "Yes" --negative "No" --prompt.foreground="33" --selected.background="33" "Install Debian Proot ?"; then
                 execute_command "pkg install proot-distro -y" "Proot-distro installation"
-                execute_command "curl -O https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/proot.sh" "Downloading Proot script" || error_msg "Impossible to download Proot script"
+                execute_command "curl -O https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/1.0.0/proot.sh" "Downloading Proot script" || error_msg "Impossible to download Proot script"
                 execute_command "chmod +x proot.sh" "Execution of Proot script"
                 ./proot.sh --gum
             fi
@@ -1293,7 +1293,7 @@ install_proot() {
             tput el
             if [[ "$CHOICE" =~ ^[yY]$ ]]; then
                 execute_command "pkg install proot-distro -y" "Proot-distro installation"
-                execute_command "curl -O https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/proot.sh" "Downloading Proot script" || error_msg "Impossible to download Proot script"
+                execute_command "curl -O https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/1.0.0/proot.sh" "Downloading Proot script" || error_msg "Impossible to download Proot script"
                 execute_command "chmod +x proot.sh" "Execution of Proot script"
                 ./proot.sh
             fi
@@ -1320,7 +1320,7 @@ get_username() {
 #------------------------------------------------------------------------------
 install_utils() {
     title_msg "❯ Utilities configuration"
-    execute_command "curl -O https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/utils.sh" "Downloading Utils script" || error_msg "Impossible to download Utils script"
+    execute_command "curl -O https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/1.0.0/utils.sh" "Downloading Utils script" || error_msg "Impossible to download Utils script"
     execute_command "chmod +x utils.sh" "Execution of Utils script"
     ./utils.sh
 
