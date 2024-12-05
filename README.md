@@ -2,7 +2,7 @@
 
 # OhMyTermux 🧊
 
-### **From selecting a shell to applying a cursor pack to performing stylish clicks in a complete Debian development environment that fits in your pocket  : dozens of parameters are available in [OhMyTermux](https://github.com/GiGiDKR/OhMyTermux).**
+### **From selecting a shell to applying a cursor pack to performing stylish clicks in a complete Debian development environment that fits in your pocket  : dozens of parameters are available in [OhMyTermux](https://github.com/OhMyAppx/OhMyTermux).**
 
 ## Installation
 
@@ -10,7 +10,7 @@
 
 2. Install **OhMyTermux** with **[Gum](https://github.com/charmbracelet/gum)** 🔥 :
 ```bash
-curl -sL https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/install.sh -o install.sh && chmod +x install.sh && ./install.sh --gum
+curl -sL https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh --gum
 ```
 
 >[!IMPORTANT]
@@ -18,7 +18,7 @@ curl -sL https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/install.sh -
 
 2. [ALT] Install OhMyTermux without Gum 🧊 :
 ```bash
-curl -sL https://raw.githubusercontent.com/GiGiDKR/OhMyTermux/1.0.0/install.sh -o install.sh && chmod +x install.sh && ./install.sh
+curl -sL https://raw.githubusercontent.com/OhMyAppx/OhMyTermux/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
 ```
 
 >[!NOTE]
